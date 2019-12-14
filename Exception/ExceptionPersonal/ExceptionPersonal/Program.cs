@@ -50,6 +50,12 @@ namespace ExceptionPersonal
             }catch (DomainException e)
             {
                 Console.WriteLine("Error in reservation: " + e.Message);
+            }catch(FormatException e)
+            {
+                Console.WriteLine("Erro format: " + e.Message);
+            }catch(Exception e)
+            {
+                Console.WriteLine("Unexpected error: " + e.Message);
             }
             }
         }
